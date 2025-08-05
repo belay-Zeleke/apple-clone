@@ -19,7 +19,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<SharedLay />}>
-          <Route path="/" element={<Main />} />
+          {/* <Route path="/" element={<Main />} /> */}
+          <Route index element={<Main />} /> 
           <Route path="/mac" element={<Mac />} />
           <Route path="/iphone" element={<Iphone />} />
           <Route path="/Watch" element={<Watch />} />
