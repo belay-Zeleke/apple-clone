@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/apple-clone/static/css/main.ddbf4f07.css",
+    "main.js": "/apple-clone/static/js/main.50d814f0.js",
+    "static/js/453.1f731720.chunk.js": "/apple-clone/static/js/453.1f731720.chunk.js",
+    "static/media/mac-laptop.jpg": "/apple-clone/static/media/mac-laptop.5a41ed84ada3ff89bc7c.jpg",
+    "static/media/new-ipad.jpg": "/apple-clone/static/media/new-ipad.89e5633372a6f0cfab6b.jpg",
+    "static/media/iphone11-pro-bg.jpg": "/apple-clone/static/media/iphone11-pro-bg.bf8cd2105e053ac6974b.jpg",
+    "static/media/iphone11-bg.jpg": "/apple-clone/static/media/iphone11-bg.c384672b76bc410be6fe.jpg",
+    "static/media/watch-series-5.jpg": "/apple-clone/static/media/watch-series-5.0e3dade246613ea1c2f5.jpg",
+    "static/media/apple-card.jpg": "/apple-clone/static/media/apple-card.9fb9be8e74aa8d34d709.jpg",
+    "static/media/apple-tv-background.jpg": "/apple-clone/static/media/apple-tv-background.e568dddf636b8fb77488.jpg",
+    "static/media/macbook-pro.jpg": "/apple-clone/static/media/macbook-pro.2e02c727b335f7c78b2c.jpg",
+    "static/media/air-pods.jpg": "/apple-clone/static/media/air-pods.7b68d9ead8abf7fc8d37.jpg",
+    "index.html": "/apple-clone/index.html",
+    "main.ddbf4f07.css.map": "/apple-clone/static/css/main.ddbf4f07.css.map",
+    "main.50d814f0.js.map": "/apple-clone/static/js/main.50d814f0.js.map",
+    "453.1f731720.chunk.js.map": "/apple-clone/static/js/453.1f731720.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddbf4f07.css",
+    "static/js/main.50d814f0.js"
+  ]
+}
