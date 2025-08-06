@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apple-clone/static/css/main.3d6b9a60.css",
-    "main.js": "/apple-clone/static/js/main.d6286a62.js",
+    "main.js": "/apple-clone/static/js/main.662ee6a8.js",
     "static/js/453.1f731720.chunk.js": "/apple-clone/static/js/453.1f731720.chunk.js",
     "static/media/mac-laptop.jpg": "/apple-clone/static/media/mac-laptop.5a41ed84ada3ff89bc7c.jpg",
     "static/media/new-ipad.jpg": "/apple-clone/static/media/new-ipad.89e5633372a6f0cfab6b.jpg",
@@ -14,11 +14,11 @@
     "static/media/air-pods.jpg": "/apple-clone/static/media/air-pods.7b68d9ead8abf7fc8d37.jpg",
     "index.html": "/apple-clone/index.html",
     "main.3d6b9a60.css.map": "/apple-clone/static/css/main.3d6b9a60.css.map",
-    "main.d6286a62.js.map": "/apple-clone/static/js/main.d6286a62.js.map",
+    "main.662ee6a8.js.map": "/apple-clone/static/js/main.662ee6a8.js.map",
     "453.1f731720.chunk.js.map": "/apple-clone/static/js/453.1f731720.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d6b9a60.css",
-    "static/js/main.d6286a62.js"
+    "static/js/main.662ee6a8.js"
   ]
 }
