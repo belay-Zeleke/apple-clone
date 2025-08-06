@@ -1,7 +1,109 @@
+import "../../General css/All-in-One.css";
+
 import React from "react";
 
+const ipads = [
+  {
+    id: 1,
+    name: "iPad Pro 13-inch (M4)",
+    description: "The ultimate iPad experience with astonishing performance.",
+    image:
+      "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-pro-13-select-202405?wid=470&hei=556&fmt=png-alpha&.v=1714415685533",
+  },
+  {
+    id: 2,
+    name: "iPad Pro 11-inch (M4)",
+    description: "Powerful and portable with the M4 chip.",
+    image:
+      "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-pro-11-select-202405?wid=470&hei=556&fmt=png-alpha&.v=1714415685518",
+  },
+  {
+    id: 3,
+    name: "iPad Air 13-inch (M2)",
+    description: "Big and beautiful with the powerful M2 chip.",
+    image:
+      "https://th.bing.com/th/id/OIP.ysuTA3JyDI8H2UF3SsMzdwHaHa?w=165&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+  },
+  {
+    id: 4,
+    name: "iPad Air 11-inch (M2)",
+    description: "Sleek, light, and supercharged with M2.",
+    image:
+      "https://www.startech.com.bd/image/cache/catalog/tablet/apple/ipad-air-13-inch/blue/ipad-air-13-blue-01-500x500.webp",
+  },
+  {
+    id: 5,
+    name: "iPad (10th generation)",
+    description: "Colorful, capable, and fun for everyday tasks.",
+    image:
+      "data:image/webp;base64,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",
+  },
+  {
+    id: 6,
+    name: "iPad (9th generation)",
+    description: "Classic design. Essential features. Great value.",
+    image:
+      "https://th.bing.com/th/id/OIP.AmoKnmj_AStcqGzBXocNgQAAAA?w=204&h=204&c=7&r=0&o=7&pid=1.7&rm=3",
+  },
+  {
+    id: 7,
+    name: "iPad mini (6th generation)",
+    description: "Mega power. Mini size.",
+    image:
+      "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-mini-select-202109?wid=470&hei=556&fmt=png-alpha&.v=1631751016000",
+  },
+  {
+    id: 8,
+    name: "iPad Pro 12.9-inch (M2)",
+    description: "A powerhouse with incredible display and performance.",
+    image:
+      "data:image/webp;base64,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",
+  },
+  {
+    id: 9,
+    name: "iPad Pro 11-inch (M2)",
+    description: "Portable pro performance with M2 chip.",
+    image:
+      "https://th.bing.com/th/id/OIP.jIvaIyHCvAh37N-ryLYhuAHaHa?w=169&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+  },
+  {
+    id: 10,
+    name: "iPad Air (5th generation)",
+    description: "Powerful, colorful, and versatile.",
+    image:
+      "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-air-select-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066726462",
+  },
+  {
+    id: 11,
+    name: "iPad 8th Generation",
+    description: "A classic choice for everyday tasks.",
+    image:
+      "data:image/webp;base64,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",
+  },
+  {
+    id: 12,
+    name: "iPad Pro 12.9-inch (4th Gen)",
+    description: "Advanced performance and pro features.",
+    image:
+      "data:image/webp;base64,UklGRqYHAABXRUJQVlA4IJoHAACwKwCdASqEAMUAPp1GnUmlpCYkKRZL4MATiWMDvH5j8Zkm9HzI/S8uF+bbqeZLzfPRzvOnoAdLj+5GC3dYmvd9Edw8eZ4RuMfwgJiPmtf63mA+sf/H7hH63+kr6x/3D9i/9qgYBri1Z6B6qxbF/v8u+6rM6GGz00SfxhA5In3V/PwmgsLiv45y+xZTZ4sx+DvbODvCF1/22hDQC5YwOJRfWx7FjE2CcVtMx7/kGCya79QWTpSjZvL/+swvtxkPvmBqS8ppWT/7rT4GgEIrJYYcq75nT5cn1J4hdXU+n2qdmk9TDLHjziSPbJplEfaFzGZuahPnOdHLXs8ynLUXBNEHplnXVHzUttwbNgFMp83MQwhnyLdOSjObmi4bCGHKDJXSOuhUQ1gXqRezm3f1MCWWptUh6xIINcIMAcuhcG3GJg7eNVemr2zSg4cEvuqgIrgiez1b4IY2QvCk1E3PIUTvSSvvyvEAAP7b38khjfmAsTnEopUC3xtr25OlH9dCrLt3Okj5owFhXa4DZEKPwF4Sa+rRpozMT3vP2nCtvkBNpHzoF6mdhQYwuxCC0DiE/kuWnKmc2iWDHu3MCDg+E+X/b72cCzjdxD77SQ++1xPhXdy5ps+XWSeSV11xtnJTrnuzH9WCjDg/07UKqk1dSbHZjeVO1ec8vlFSq66iCRrx6KqGD2wREzdG+9A7+8VMPweE3wDrRnxHU08NzVsjxdLPkebqWDYkSIR3943pxVX8MUwd10Jc8N2zVmbom1qvBgq+IDy8U8fDqXNeLBXeTAtpwH1VVgLX7L3UGdS8DVXNt/wRXofuTF2dYamdatQG0BcbcRd3uO4f+huHpf2RHBmmrh0uhGBiePWgzKR4+P1RCoQMf6hmqiXKyFNRMX/UxryBeVrLYyuZuqzJlFJIQ5EzEfQJcYAHjHardvA4wu9uYwBo18s+8OzF7vhW6FGXSS9d17AeBr56XVCbvXlQoebXoyRZ+98GNVbtucEJf5m7mNr9b79NsDytJFq6tQBd7bacfRFc6Her244UXFi55+VmOsv+zqbcqWZVioo6w2O4ZtpMJUmF+NYp3BMBQP6/WQcp9emdzUjFWT+gptjQKQMjCySSKEz4hytZjdlWj4hrH6H2xOIZ2a+goCfvw50xlvtCSSJp92gZ1mPmuSJB+fBE4DHcLN8rDXMENc7Rqe5xnOB4nEfv/19QHTLQoE2nEtHfCMr0VxXwwDcK7I9fcT6XlY7Ks9xOV/x/Xvlo8oIQMcrXWvsDJXGQgW+Kzbh4cgkooSWwh/7YSrzcFeiprpDWsv/KImtTUtf8e64GC3mg3i74QjtPI6ZOR23tzPXvmHuGjZghce1utZ5OFGR51bIPmu3zxeE3SB/25ktz5Y6vtXVw8it6i2LWaynvXeonqP/gpqbu3wEcPQMc6bT+VpKz8FjuxtrSpndhlE22Rv+YXtO3FTx5XC3rodBE/YtGZNUZpgMWfsCeICoVoI1kiBBETytt1jc/FWngK+ClazQuKYgh/AHpnhVvzwkoTz2wbH2lT3Xm5R5ApWjjhILS97tHGa44Letl0zTYkgK2M5oP/E+UUzAsVPx8/NrUqKuE4EPQjsydyEa8OfT7uBq5saOWAOAl/KEECQpkpVRHIZRcx3z6UpSFxmV0hYGJg6TNg1tbGdOvr2BAWh4ktC4n9yA2IK+x4zW8kR6hZXEtEz+arcBGh85xZeBHebRM0AtwAuQsxop9zVmuC8OJgpVEWJsOnpPN1fCNOHDC9ahYX94FEWW0an+eoxD138+AXNuQF9CkX8tMvTuAxQZ23E4+kDVK9HVSZwngoOv4x254oeagj4LHhIqmCbDUSV6nRZn8Lg5EcMY8JRDcc/S9bWW1KpeKLtc6BphIS8liSn1nin2XuN9pnN9p+QINScPaIVDGFjkIYEz8gS/xXGm7rqO/91vd1PqnO4kbP8wbkCCsyhvSn7S84LBzdQJMLDTHg4JAcPOVxEicKI8OLmeEKLKWYDpmzHrfsN/6MR3J4PzdGLspVSo9luUoXPadv90PAFqURLNOBoBiB4+MVstcbzmTYwXnkWthKxNSXioHCA/omEORTJ5rm2a04jSeV2kMdg/EaUHYHYYd6sN/bHxQIdqnjwJybQMkdMxZjBXku3c8slZYT3xa7GMKigDTI/ZAIfI6DuITD2Pt0F4MKuds9tYGLkQDHfPn6BBOnwR80Gj4KLUrgRhxpfgtvLe9D+X4fuSr7/UFBW2qg9q7tNII9TezSALQgQjAOJgVN/U/oDA4FGosDijwr9Eh27p7/+lHA4Kv7cW7muOUyjLCFfT+KMQIq2AQNStn4mwzB+a0EKc1F3epgYXwGQACYFj8LgIDJ5fDfU9vXgxszrQsvqIFUUdYWIDtJtwU35g48/+M9/XwQgBY3HeJ7QLr1jPJ/BBDNI13rjE1nZI2NwAGSUyJwmq8fmiLU8rEDdSYJS5QGQSXK9GPMvMFxMXAQ1X40YE/uL+2Xfi7vExZjFwLv+tLNW3ZaYxKv/NcJpk2w3WHoapfvXGPhbIH8SV1GlqruHIl6Yvd0QS8+txgTV7NC4AhbqR9EhGnmy0sEFjpt4AAAA==",
+  },
+];
+
 const Ipad = () => {
-  return <div>It`s Ipad Page</div>;
+  return (
+    <div className="ipad-wrapper">
+      <h1 className="ipad-heading">Explore iPad Lineup</h1>
+      <div className="ipad-grid">
+        {ipads.map((ipad) => (
+          <div className="ipad-card" key={ipad.id}>
+            <img src={ipad.image} alt={ipad.name} className="ipad-img" />
+            <h2 className="ipad-name">{ipad.name}</h2>
+            <p className="ipad-desc">{ipad.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Ipad;

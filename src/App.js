@@ -13,6 +13,8 @@ import Support from "./Component/Pages/Support";
 import Cart from "./Component/Pages/Cart";
 import Four04 from "./Component/Pages/Four04";
 import SharedLay from "./Component/Shared/SharedLay";
+import Store from "./Component/Pages/Store";
+import Accessories from "./Component/Pages/Accessories";
 
 function App() {
   return (
@@ -20,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLay />}>
           {/* <Route path="/" element={<Main />} /> */}
-          <Route index element={<Main />} /> 
+          <Route index element={<Main />} />
           <Route path="/mac" element={<Mac />} />
           <Route path="/iphone" element={<Iphone />} />
           <Route path="/Watch" element={<Watch />} />
@@ -29,6 +31,8 @@ function App() {
           <Route path="/Support" element={<Support />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/ipad" element={<Ipad />} />
+          <Route path="/Store" element={<Store />} />
+          <Route path="/Accessories" element={<Accessories />} />
           <Route path="*" element={<Four04 />} />
         </Route>
       </Routes>

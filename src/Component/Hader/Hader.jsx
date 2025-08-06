@@ -84,13 +84,13 @@ const Header = () => {
             </li>
             {/* <li><Link to="/Entertainments">Entertainments</Link></li> */}
             <li>
-              <Link to="/mac">Accessories</Link>
+              <Link to="/Accessories">Accessories</Link>
             </li>
             <li>
               <Link to="/support">Support</Link>
             </li>
             <li className="icon">
-              <Link to="/search">
+              <Link to="">
                 <img src={search} alt="Search" />
               </Link>
             </li>

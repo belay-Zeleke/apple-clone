@@ -631,35 +631,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ========== SEC-7 VIDEO SECTION (Apple Style) ========== */
 
 .sec-7 {
@@ -765,4 +736,552 @@
   .VideoDescription {
     font-size: 13px;
   }
+}
+
+
+.accessories-wrapper {
+  background-color: #f5f5f7;
+  padding: 60px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #1d1d1f;
+}
+
+.accessories-wrapper h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #6e6e73;
+  margin-bottom: 40px;
+}
+
+.accessories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+}
+
+.accessory-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.accessory-card:hover {
+  transform: translateY(-5px);
+}
+
+.accessory-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.accessory-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.accessory-card p {
+  font-size: 14px;
+  color: #6e6e73;
+}
+
+
+
+
+.store-container {
+  padding: 50px 20px;
+  background-color: #f5f5f7;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  text-align: center;
+}
+
+.store-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #1d1d1f;
+}
+
+.products-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1d1d1f;
+  margin: 10px 0 5px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #6e6e73;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mac-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #1d1d1f;
+  background-color: #fff;
+  text-align: center;
+}
+
+.mac-page h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.mac-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+.mac-product-card {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #f5f5f7;
+  cursor: pointer;
+}
+
+.mac-product-card:hover {
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.15);
+}
+
+.mac-product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.mac-product-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.mac-product-description {
+  font-size: 1rem;
+  color: #6e6e73;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Apple Store–like Clean Layout */
+
+.iphone-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #1d1d1f;
+  background-color: #fff;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.iphone-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #1d1d1f;
+}
+
+/* Responsive Product Grid */
+.iphone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Individual Product Card */
+.iphone-card {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+.iphone-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Product Image */
+.iphone-img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+/* Product Name */
+.iphone-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1d1d1f;
+}
+
+/* Product Description */
+.iphone-desc {
+  font-size: 0.95rem;
+  color: #6e6e73;
+  line-height: 1.4;
+}
+
+/* Responsive spacing for smaller screens */
+@media screen and (max-width: 480px) {
+  .iphone-title {
+    font-size: 2rem;
+  }
+
+  .iphone-card {
+    padding: 16px;
+  }
+
+  .iphone-name {
+    font-size: 1rem;
+  }
+
+  .iphone-desc {
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ipad-wrapper {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 50px 20px;
+  background-color: #fff;
+  max-width: 1400px;
+  margin: auto;
+  color: #1d1d1f;
+}
+
+.ipad-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ipad-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+}
+
+.ipad-card {
+  text-align: center;
+  background: #f5f5f7;
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.ipad-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.ipad-img {
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.ipad-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ipad-desc {
+  font-size: 0.95rem;
+  color: #6e6e73;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Watch.css */
+
+.watch-page {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f5f5f7;
+}
+
+.watch-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.watch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.watch-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.watch-item:hover {
+  transform: translateY(-5px);
+}
+
+.watch-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.watch-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #1d1d1f;
+}
+
+.watch-item p {
+  font-size: 0.95rem;
+  color: #6e6e73;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tv-page {
+  padding: 40px 20px;
+  background-color: #f5f5f7;
+  min-height: 100vh;
+}
+
+.tv-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.tv-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tv-product {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.tv-product:hover {
+  transform: translateY(-5px);
+}
+
+.tv-product img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.tv-product h3 {
+  font-size: 18px;
+  color: #1d1d1f;
+  margin: 10px 0 5px;
+}
+
+.tv-product p {
+  font-size: 16px;
+  color: #6e6e73;
 }
