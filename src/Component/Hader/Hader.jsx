@@ -95,7 +95,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="icon">
-              <Link to="/cart">
+              <Link to="">
                 <img src={cart} alt="Cart" />
               </Link>
             </li>
